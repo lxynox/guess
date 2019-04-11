@@ -64,5 +64,11 @@ export const detect = (base: string): ProjectMetadata | undefined => {
       }
     };
   }
-  return undefined;
+
+	// default to node-starter-kit(zrm) project type
+	return {
+		details: {
+			sourceDir: 'app'
+		}
+	};
 };

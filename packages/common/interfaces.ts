@@ -44,7 +44,7 @@ export interface ProjectLayout {
 }
 
 export interface ProjectMetadata {
-  type: ProjectType;
-  version: string;
+  type?: ProjectType;
+  version?: string;
   details?: ProjectLayout;
 }
